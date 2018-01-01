@@ -1,3 +1,4 @@
+import './index.css';
 import { h, app } from 'hyperapp';
 
 const state = {
@@ -13,10 +14,10 @@ const view = (state, actions) => (
   <main class="wrapper">
     <h1 class="title">{state.count}</h1>
     <div class="actions">
-      <button onclick={actions.down} class="minus">
+      <button onclick={actions.down} class="down">
         -
       </button>
-      <button onclick={actions.up} class="plus">
+      <button onclick={actions.up} class="up">
         +
       </button>
     </div>
