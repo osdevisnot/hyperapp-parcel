@@ -1,16 +1,17 @@
 {
   "name": "hyperapp-parcel",
   "version": "1.0.0",
+  "description": "HyperApp Parcel Starter",
   "main": "index.js",
   "repository": "https://github.com/osdevisnot/hyperapp-parcel.git",
   "author": "osdevisnot <osdevisnot@gmail.com>",
   "license": "MIT",
   "scripts": {
     "setup": "git clean -fdX",
-    "postsetup": "yarn",
+    "postsetup": "npm install",
     "prestart": "del dist .cache",
     "start": "parcel src/index.html",
-    "prebuild": "yarn run setup",
+    "prebuild": "npm run setup",
     "build": "parcel build src/index.html --public-url ./"
   },
   "dependencies": {

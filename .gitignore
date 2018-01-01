@@ -3,10 +3,11 @@ build
 dist
 .cache
 
-# Logs
+# Logs & Locks
 logs
 *.log
 *.lock
+package-lock.json
 
 # Runtime data
 pids
